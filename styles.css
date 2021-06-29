@@ -1,0 +1,133 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lexend Deca", sans-serif;
+    background-color: white;
+    color: white;
+    margin: 0;
+}
+
+h1 {
+    font-family: "Big Shoulders Display", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+p {
+    line-height: 1.6;
+    color: rgb(219, 215, 215);
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+/* flex */
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+#flex-container {
+    margin: 50px;
+}
+
+.button {
+    display: inline;
+    background-color: white;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 45%;
+    position: absolute;
+    bottom: 40px;
+    border-radius: 30px; 
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+svg {
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card {
+    background-color: brown;
+    height: 500px;
+    width: 300px;
+    padding: 40px;
+    position: relative;
+}
+
+.card1 {
+    background-color: #e28525;
+    border-radius: 12px 12px  0px 0px;
+}
+
+.card1 a{
+   color: #e28525;
+}
+
+.card2 {
+    background-color: #016972;
+}
+
+.card2 a{
+    color: #016972; 
+}
+
+.card3 {
+    background-color: #00403f;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.card3 a{
+    color: #00403f;
+}
+
+.button:hover {
+    background-color: transparent;
+}
+
+.button:hover a {
+    color: white;
+}
+
+/* footer */
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+    }
+
+
+@media (min-width: 850px) {
+
+
+    
+   #flex-container {
+       display:flex;
+       align-items: center;
+       height: 100vh;
+       margin: 0;
+   }
+
+   .card1 {
+       border-radius: 12px 0px 0px 12px;
+   }
+
+   .card3 {
+       border-radius: 0px 12px 12px 0px;
+   }
+}
